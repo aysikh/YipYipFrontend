@@ -1,6 +1,4 @@
-import React, {useState} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { NavLink, Redirect, Link } from 'react-router-dom'
+import React from 'react';
 import NewsfeedContainer from './NewsfeedContainer'
 
 export default function MainContainer() {

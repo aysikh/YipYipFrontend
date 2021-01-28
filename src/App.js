@@ -4,7 +4,9 @@ import NavBar from './containers/NavBar'
 import MainContainer from './containers/MainContainer'
 import Logo from './assets/yipyiplogo2.png'
 import { makeStyles } from '@material-ui/core/styles';
+import { Switch, Route } from 'react-router-dom';
 
+import NewsfeedContainer from './containers/NewsfeedContainer'
 
 function App() {
   const useStyles = makeStyles({
@@ -22,7 +24,10 @@ function App() {
         <img src={Logo} className={classes.logo}/> 
       </center>
       <NavBar />
-      <MainContainer />
+
+      <Switch>
+        <Route exact path="/newsfeed" component={NewsfeedContainer} />
+      </Switch>
     </div>
   );
 }

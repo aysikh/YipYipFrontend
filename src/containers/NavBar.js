@@ -5,8 +5,10 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import WhatshotIcon from '@material-ui/icons/Whatshot';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import NewReleasesIcon from '@material-ui/icons/NewReleases';
+import SentimentSatisfiedAltIcon from '@material-ui/icons/SentimentSatisfiedAlt';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+
+import { useHistory } from 'react-router-dom'
 import { NavLink, Redirect, Link } from 'react-router-dom'
 
 export default function NavBar(){
@@ -18,6 +20,7 @@ export default function NavBar(){
   });
   
   const classes = useStyles();
+  const history = useHistory();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -36,10 +39,26 @@ export default function NavBar(){
             textColor="secondary"
             aria-label="icon label tabs example"
           >
-            <Tab icon={<NewReleasesIcon />} label="NEW" />
-            <Tab icon={<WhatshotIcon />} label="HOT" />
-            <Tab icon={<AccountCircleIcon />} label="PROFILE" />
-            <Tab icon={<ExitToAppIcon />} label="LOGOUT" />
+            <Tab 
+              onClick={() => history.push('/newsfeed') }
+              icon={<SentimentSatisfiedAltIcon />} 
+              label="YIPPERS" 
+            />
+            <Tab 
+              onClick={() => history.push('hot') }
+              icon={<WhatshotIcon />} 
+              label="HOT" 
+            />
+            <Tab 
+              onClick={() => history.push('profile') }
+              icon={<AccountCircleIcon />} 
+              label="PROFILE" 
+            />
+            <Tab 
+              onClick={() => history.push('logout') }
+              icon={<ExitToAppIcon />} 
+              label="LOGOUT" 
+            />
           </Tabs>
         </Paper>
       </center>

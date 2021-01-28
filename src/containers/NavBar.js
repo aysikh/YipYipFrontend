@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
@@ -7,9 +7,8 @@ import WhatshotIcon from '@material-ui/icons/Whatshot';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import SentimentSatisfiedAltIcon from '@material-ui/icons/SentimentSatisfiedAlt';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-
 import { useHistory } from 'react-router-dom'
-import { NavLink, Redirect, Link } from 'react-router-dom'
+
 
 export default function NavBar(){
   const useStyles = makeStyles({

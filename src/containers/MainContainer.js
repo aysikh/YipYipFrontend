@@ -6,7 +6,8 @@ export default function MainContainer() {
   return(
     <div className="Main Container">
       <h3> testing main container here </h3>
-      <NewsfeedContainer />
+      <center><NewsfeedContainer /></center>
+      
     </div>
   )
 }

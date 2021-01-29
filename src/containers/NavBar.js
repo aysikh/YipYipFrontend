@@ -44,17 +44,17 @@ export default function NavBar(){
               label="YIPPERS" 
             />
             <Tab 
-              onClick={() => history.push('hot') }
+              onClick={() => history.push('/hot') }
               icon={<WhatshotIcon />} 
               label="HOT" 
             />
             <Tab 
-              onClick={() => history.push('profile') }
+              onClick={() => history.push('/profile') }
               icon={<AccountCircleIcon />} 
               label="PROFILE" 
             />
             <Tab 
-              onClick={() => history.push('logout') }
+              onClick={() => history.push('/logout') }
               icon={<ExitToAppIcon />} 
               label="LOGOUT" 
             />

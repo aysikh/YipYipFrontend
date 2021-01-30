@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
+import NewYipForm from '../components/NewYipForm'
 
 export default function NewsfeedContainer(){
   const useStyles = makeStyles({
@@ -17,11 +18,7 @@ export default function NewsfeedContainer(){
   return(
     <div className={classes.mainDiv}>
       <h1> Newsfeed container </h1>
-      <h1> Newsfeed container </h1>
-      <h1> Newsfeed container </h1>
-      <h1> Newsfeed container </h1>
-      <h1> Newsfeed container </h1>
-      <h1> Newsfeed container </h1>
+      <NewYipForm /> 
       
       
     </div>

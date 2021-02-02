@@ -9,6 +9,7 @@ import { Switch, Route } from 'react-router-dom';
 import HotYipsContainer from './containers/HotYipsContainer'
 import MainProfileContainer from './containers/MainProfileContainer'
 import NewsfeedContainer from './containers/NewsfeedContainer'
+import LogoutLogin from './containers/LoginLogoutContainer'
 
 function App() {
   const useStyles = makeStyles({
@@ -30,6 +31,7 @@ function App() {
         <Route exact path="/newsfeed" component={NewsfeedContainer} />
         <Route exact path="/hot" component={HotYipsContainer} />
         <Route exact path="/profile" component={MainProfileContainer} />
+        <Route exact path="/logout" component={LogoutLogin} />
       </Switch>
     </div>
   );
